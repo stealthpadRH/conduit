@@ -1,0 +1,42 @@
+{
+  "name": "@stealthpad/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Stealthpad: read API client, claim transaction builder, NEAR Intents route quotes, Zcash and Aleo address checks",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "viem": "^2.56.9"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "viem": "^2.56.9"
+  },
+  "keywords": [
+    "stealthpad",
+    "robinhood-chain",
+    "viem",
+    "merkle-claim",
+    "near-intents",
+    "zcash",
+    "aleo"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

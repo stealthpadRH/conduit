@@ -1,0 +1,24 @@
+{
+  "name": "stealthpad-conduit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Stealthpad read API reference and TypeScript SDK",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @stealthpad/sdk",
+    "typecheck": "npm run typecheck -w @stealthpad/sdk && tsc -p tsconfig.json --noEmit",
+    "example": "tsx examples/basic-usage.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
